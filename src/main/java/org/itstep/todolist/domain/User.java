@@ -11,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class User {
-    @Id 
+    @Id
     @Column(name = "username")
     String name;
 
