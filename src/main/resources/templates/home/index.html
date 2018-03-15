@@ -2,9 +2,19 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>Simple todo list</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Home</h1>
+    <h1>Rest demo</h1>
+    <ul>
+        <li><a th:href="@{/h2-console}">h2 Console</a></li>
+        <li><a th:href="@{/api/v1}">HAL Browser</a></li>
+        <li><a th:href="@{/api/v1/todolist}">ToDo List</a></li>
+    </ul>
 </body>
 </html>
